@@ -6,7 +6,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "GoogleMobileAds-SPM",
+    name: "GoogleMobileAds",
     platforms: [
         .iOS(.v10)
     ],
@@ -21,7 +21,7 @@ let package = Package(
                  from:  "7.0.0"
         ),
         .package(name: "GoogleUserMessagingPlatform-SPM",
-                 url: "https://github.com/quanghits/GoogleUserMessagingPlatform-SPM",
+                 url: "https://github.com/quanghits/GoogleUserMessagingPlatform",
                  from: "1.1.0")
         
     ],
