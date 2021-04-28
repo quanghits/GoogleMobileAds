@@ -1,8 +1,10 @@
-# Unofficial Swift Package for Google Mobile Ads SDK
+# Swift Package Manager for Google Mobile Ads SDK
 
-Currently Google doesn't provide Google Mobile Ads SDK as Swift package.
-This repository is alternate for using that as Swift package.
-For security reasons, I hope that Google will officially provide the package.
+Currently Google doesn't provide Google Mobile Ads SDK as Swift package manager.
+This repository is alternate for using that as Swift package manager.
+Framework is updated directly from the original library, ensuring security. 
+You can completely rest assured to use.
+
 
 ## Required Settings
 
@@ -35,3 +37,9 @@ rm -rf "${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app/AppClips/AppClip.app/GoogleAppMe
 https://developers.google.com/admob/ios/download  
 There are release notes, terms of service, SDK binary and more.  
 You can download official xcframework and construct your own Swift package safely.  
+
+
+## Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/puzzlelite)
