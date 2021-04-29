@@ -21,7 +21,7 @@ let package = Package(
                  from:  "7.0.0"
         ),
         .package(name: "GoogleUserMessagingPlatform",
-                 url: "https://github.com/quanghits/GoogleUserMessagingPlatform",
+                 url: "https://github.com/quanghits/GoogleUserMessagingPlatform.git",
                  from: "1.1.0")
         
     ],
