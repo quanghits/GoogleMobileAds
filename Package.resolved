@@ -11,8 +11,8 @@
         }
       },
       {
-        "package": "GoogleUserMessagingPlatform-SPM",
-        "repositoryURL": "https://github.com/quanghits/GoogleUserMessagingPlatform-SPM",
+        "package": "GoogleUserMessagingPlatform",
+        "repositoryURL": "https://github.com/quanghits/GoogleUserMessagingPlatform",
         "state": {
           "branch": null,
           "revision": "6fdbd0acf0e583ec453903cd3d521d833f470cad",
