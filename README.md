@@ -10,6 +10,8 @@ You can completely rest assured to use.
 
 - Add the `-ObjC` option to `Other Linker Flags` in the `Build Settings` tab of the host project.
 
+![objc_linker_flag](https://user-images.githubusercontent.com/34022486/136850046-f5275d39-70b0-4a6b-bedd-5b8b05acddeb.png)
+
 ## Workaround for Xcode 12.0...12.4
 
 - There is an issue with device installation or archive uploading, see the discussion and various workaround scripts in official Firebase SPM  
