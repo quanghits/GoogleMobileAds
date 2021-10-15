@@ -12,7 +12,8 @@
 #import <UIKit/UIKit.h>
 
 /// Add this constant to the testDevices property's array to receive test ads on the simulator.
-GAD_EXTERN NSString *_Nonnull const kGADSimulatorID;
+GAD_EXTERN NSString *_Nonnull const kGADSimulatorID GAD_DEPRECATED_MSG_ATTRIBUTE(
+    "Use GADRequestConfiguration/GADSimulatorID instead.");
 
 /// Deprecated gender constants.
 typedef NS_ENUM(NSInteger, GADGender) {

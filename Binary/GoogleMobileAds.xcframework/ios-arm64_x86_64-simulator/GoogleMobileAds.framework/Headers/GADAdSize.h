@@ -13,7 +13,7 @@
 /// constructed by GADAdSizeFromCGSize, GADAdSizeFullWidthPortraitWithHeight,
 /// GADAdSizeFullWidthLandscapeWithHeight.
 ///
-/// Do not create a GADAdSize manually. Use one of the kGADAdSize constants. Treat GADAdSize as an
+/// Do not create a GADAdSize manually. Use one of the GADAdSize constants. Treat GADAdSize as an
 /// opaque type. Do not access any fields directly. To obtain a concrete CGSize, use the function
 /// CGSizeFromGADAdSize().
 typedef struct GAD_BOXABLE GADAdSize GADAdSize;
@@ -31,31 +31,31 @@ struct GAD_BOXABLE GADAdSize {
 #pragma mark Standard Sizes
 
 /// iPhone and iPod Touch ad size. Typically 320x50.
-GAD_EXTERN GADAdSize const kGADAdSizeBanner;
+GAD_EXTERN GADAdSize const GADAdSizeBanner;
 
-/// Taller version of kGADAdSizeBanner. Typically 320x100.
-GAD_EXTERN GADAdSize const kGADAdSizeLargeBanner;
+/// Taller version of GADAdSizeBanner. Typically 320x100.
+GAD_EXTERN GADAdSize const GADAdSizeLargeBanner;
 
 /// Medium Rectangle size for the iPad (especially in a UISplitView's left pane). Typically 300x250.
-GAD_EXTERN GADAdSize const kGADAdSizeMediumRectangle;
+GAD_EXTERN GADAdSize const GADAdSizeMediumRectangle;
 
 /// Full Banner size for the iPad (especially in a UIPopoverController or in
 /// UIModalPresentationFormSheet). Typically 468x60.
-GAD_EXTERN GADAdSize const kGADAdSizeFullBanner;
+GAD_EXTERN GADAdSize const GADAdSizeFullBanner;
 
 /// Leaderboard size for the iPad. Typically 728x90.
-GAD_EXTERN GADAdSize const kGADAdSizeLeaderboard;
+GAD_EXTERN GADAdSize const GADAdSizeLeaderboard;
 
 /// Skyscraper size for the iPad. Mediation only. AdMob/Google does not offer this size. Typically
 /// 120x600.
-GAD_EXTERN GADAdSize const kGADAdSizeSkyscraper;
+GAD_EXTERN GADAdSize const GADAdSizeSkyscraper;
 
 /// An ad size that spans the full width of its container, with a height dynamically determined by
 /// the ad.
-GAD_EXTERN GADAdSize const kGADAdSizeFluid;
+GAD_EXTERN GADAdSize const GADAdSizeFluid;
 
 /// Invalid ad size marker.
-GAD_EXTERN GADAdSize const kGADAdSizeInvalid;
+GAD_EXTERN GADAdSize const GADAdSizeInvalid;
 
 #pragma mark Inline Adaptive Sizes
 
@@ -93,7 +93,7 @@ GAD_EXTERN GADAdSize GADInlineAdaptiveBannerAdSizeWithWidthAndMaxHeight(CGFloat 
 #pragma mark Anchored Adaptive Sizes
 
 /// Returns a GADAdSize with the given width and a Google-optimized height to create a banner ad.
-/// The size returned has an aspect ratio similar to that of kGADAdSizeBanner, suitable for
+/// The size returned has an aspect ratio similar to that of GADAdSizeBanner, suitable for
 /// anchoring near the top or bottom of your app. The height is never larger than 15% of the
 /// device's portrait height and is always between 50-90 points. This function always returns the
 /// same height for any width / device combination.
@@ -101,7 +101,7 @@ GAD_EXTERN GADAdSize GADPortraitAnchoredAdaptiveBannerAdSizeWithWidth(CGFloat wi
 
 /// Returns a GADAdSize with the given width and a Google-optimized height to create a banner ad.
 /// The size returned is suitable for use in a banner ad anchored near the top or bottom of your
-/// app, similar to use of kGADAdSizeBanner. The height is never larger than 15% of the devices's
+/// app, similar to use of GADAdSizeBanner. The height is never larger than 15% of the devices's
 /// landscape height and is always between 50-90 points. This function always returns the same
 /// height for any width / device combination.
 GAD_EXTERN GADAdSize GADLandscapeAnchoredAdaptiveBannerAdSizeWithWidth(CGFloat width);
@@ -148,7 +148,7 @@ GAD_EXTERN NSString *_Nonnull NSStringFromGADAdSize(GADAdSize size);
 /// Returns an NSValue representing the GADAdSize.
 GAD_EXTERN NSValue *_Nonnull NSValueFromGADAdSize(GADAdSize size);
 
-/// Returns a GADAdSize from an NSValue. Returns kGADAdSizeInvalid if the value is not a GADAdSize.
+/// Returns a GADAdSize from an NSValue. Returns GADAdSizeInvalid if the value is not a GADAdSize.
 GAD_EXTERN GADAdSize GADAdSizeFromNSValue(NSValue *_Nonnull value);
 
 #pragma mark Deprecated
@@ -162,3 +162,35 @@ GAD_EXTERN GADAdSize const kGADAdSizeSmartBannerPortrait
 /// typically 32 points on an iPhone/iPod UI, and 90 points tall on an iPad UI.
 GAD_EXTERN GADAdSize const kGADAdSizeSmartBannerLandscape
     GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADLandscapeAnchoredAdaptiveBannerAdSizeWithWidth");
+
+/// iPhone and iPod Touch ad size. Typically 320x50.
+GAD_EXTERN GADAdSize const kGADAdSizeBanner GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeBanner");
+
+/// Taller version of GADAdSizeBanner. Typically 320x100.
+GAD_EXTERN GADAdSize const kGADAdSizeLargeBanner
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeLargeBanner");
+
+/// Medium Rectangle size for the iPad (especially in a UISplitView's left pane). Typically 300x250.
+GAD_EXTERN GADAdSize const kGADAdSizeMediumRectangle
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeMediumRectangle");
+
+/// Full Banner size for the iPad (especially in a UIPopoverController or in
+/// UIModalPresentationFormSheet). Typically 468x60.
+GAD_EXTERN GADAdSize const kGADAdSizeFullBanner
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeFullBanner");
+
+/// Leaderboard size for the iPad. Typically 728x90.
+GAD_EXTERN GADAdSize const kGADAdSizeLeaderboard
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeLeaderboard");
+
+/// Skyscraper size for the iPad. Mediation only. AdMob/Google does not offer this size. Typically
+/// 120x600.
+GAD_EXTERN GADAdSize const kGADAdSizeSkyscraper
+    GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeSkyscraper");
+
+/// An ad size that spans the full width of its container, with a height dynamically determined by
+/// the ad.
+GAD_EXTERN GADAdSize const kGADAdSizeFluid GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeFluid");
+
+/// Invalid ad size marker.
+GAD_EXTERN GADAdSize const kGADAdSizeInvalid GAD_DEPRECATED_MSG_ATTRIBUTE("Use GADAdSizeInvalid");

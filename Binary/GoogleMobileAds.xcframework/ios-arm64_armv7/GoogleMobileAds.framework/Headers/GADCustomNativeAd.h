@@ -23,7 +23,7 @@ GAD_EXTERN NSString *_Nonnull const GADCustomNativeAdMediaViewKey;
 @protocol GADCustomNativeAdDelegate;
 
 /// Custom native ad. To request this ad type, you need to pass
-/// kGADAdLoaderAdTypeCustomNative (see GADAdLoaderAdTypes.h) to the |adTypes| parameter
+/// GADAdLoaderAdTypeCustomNative (see GADAdLoaderAdTypes.h) to the |adTypes| parameter
 /// in GADAdLoader's initializer method. If you request this ad type, your delegate must conform to
 /// the GADCustomNativeAdLoaderDelegate protocol.
 @interface GADCustomNativeAd : NSObject
