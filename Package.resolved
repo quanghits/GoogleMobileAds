@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "GoogleAppMeasurement",
+        "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
+        "state": {
+          "branch": null,
+          "revision": "06add56b27b88ae5180e92d4ee21a1199ee888a1",
+          "version": "8.8.0"
+        }
+      },
+      {
+        "package": "GoogleUserMessagingPlatform",
+        "repositoryURL": "https://github.com/quanghits/GoogleUserMessagingPlatform.git",
+        "state": {
+          "branch": null,
+          "revision": "f322d91b6b0497b727b228a5fa5b9394e7886d3a",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "GoogleUtilities",
+        "repositoryURL": "https://github.com/google/GoogleUtilities.git",
+        "state": {
+          "branch": null,
+          "revision": "b3bb0c5551fb3f80ca939829639ab5b093edd14f",
+          "version": "7.7.0"
+        }
+      },
+      {
+        "package": "nanopb",
+        "repositoryURL": "https://github.com/firebase/nanopb.git",
+        "state": {
+          "branch": null,
+          "revision": "7ee9ef9f627d85cbe1b8c4f49a3ed26eed216c77",
+          "version": "2.30908.0"
+        }
+      },
+      {
+        "package": "Promises",
+        "repositoryURL": "https://github.com/google/promises.git",
+        "state": {
+          "branch": null,
+          "revision": "611337c330350c9c1823ad6d671e7f936af5ee13",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -27,13 +27,6 @@
 /// JSON-safe dictionary representation of the ad network response info.
 @property(nonatomic, readonly, nonnull) NSDictionary<NSString *, id> *dictionaryRepresentation;
 
-#pragma mark Deprecated
-
-/// Deprecated. Use adUnitMapping.
-@property(nonatomic, readonly, nonnull)
-    NSDictionary<NSString *, id> *credentials GAD_DEPRECATED_MSG_ATTRIBUTE(
-        "Use adUnitMapping instead");
-
 @end
 
 /// Ad network class name for ads returned from Google's ad network.

@@ -12,16 +12,16 @@
 typedef NSString *GADMaxAdContentRating NS_STRING_ENUM;
 
 /// Rating for content suitable for general audiences, including families.
-GAD_EXTERN GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingGeneral;
+extern GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingGeneral;
 /// Rating for content suitable for most audiences with parental guidance.
-GAD_EXTERN GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingParentalGuidance;
+extern GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingParentalGuidance;
 /// Rating for content suitable for teen and older audiences.
-GAD_EXTERN GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingTeen;
+extern GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingTeen;
 /// Rating for content suitable only for mature audiences.
-GAD_EXTERN GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingMatureAudience;
+extern GADMaxAdContentRating _Nonnull const GADMaxAdContentRatingMatureAudience;
 
 /// Add this constant to the testDevices property's array to receive test ads on the simulator.
-GAD_EXTERN NSString *_Nonnull const GADSimulatorID;
+extern NSString *_Nonnull const GADSimulatorID;
 
 /// Request configuration. The settings in this class will apply to all ad requests.
 @interface GADRequestConfiguration : NSObject

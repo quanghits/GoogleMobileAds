@@ -21,7 +21,7 @@
 - (void)reportClick;
 
 /// Notifies Google Mobile Ads SDK that the GADMediationAd will present a full screen modal view.
-/// Maps to adDidPresentFullScreenContent: for full screen ads.
+/// Maps to adWillPresentFullScreenContent: for full screen ads.
 - (void)willPresentFullScreenView;
 
 /// Notifies Google Mobile Ads SDK that the GADMediationAd failed to present with an error.
@@ -40,7 +40,7 @@
 @protocol GADMediationBannerAdEventDelegate <GADMediationAdEventDelegate>
 
 /// Deprecated. No replacement.
-- (void)willBackgroundApplication GAD_DEPRECATED_ATTRIBUTE;
+- (void)willBackgroundApplication GAD_DEPRECATED_MSG_ATTRIBUTE("Deprecated. No replacement.");
 
 @end
 
@@ -48,7 +48,7 @@
 @protocol GADMediationInterstitialAdEventDelegate <GADMediationAdEventDelegate>
 
 /// Deprecated. No replacement.
-- (void)willBackgroundApplication GAD_DEPRECATED_ATTRIBUTE;
+- (void)willBackgroundApplication GAD_DEPRECATED_MSG_ATTRIBUTE("Deprecated. No replacement.");
 
 @end
 
@@ -71,7 +71,7 @@
 - (void)didUnmuteVideo;
 
 /// Deprecated. No replacement.
-- (void)willBackgroundApplication GAD_DEPRECATED_ATTRIBUTE;
+- (void)willBackgroundApplication GAD_DEPRECATED_MSG_ATTRIBUTE("Deprecated. No replacement.");
 
 @end
 

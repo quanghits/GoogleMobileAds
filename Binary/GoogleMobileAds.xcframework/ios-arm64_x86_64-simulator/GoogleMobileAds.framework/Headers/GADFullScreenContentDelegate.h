@@ -37,8 +37,8 @@
 - (void)ad:(nonnull id<GADFullScreenPresentingAd>)ad
     didFailToPresentFullScreenContentWithError:(nonnull NSError *)error;
 
-/// Tells the delegate that the ad presented full screen content.
-- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad;
+/// Tells the delegate that the ad will present full screen content.
+- (void)adWillPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad;
 
 /// Tells the delegate that the ad will dismiss full screen content.
 - (void)adWillDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad;

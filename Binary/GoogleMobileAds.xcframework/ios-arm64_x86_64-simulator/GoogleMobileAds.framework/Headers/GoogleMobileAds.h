@@ -97,8 +97,6 @@ FOUNDATION_EXPORT const unsigned char GoogleMobileAdsVersionString[];
 #import <GoogleMobileAds/Mediation/GADMediationBannerAd.h>
 #import <GoogleMobileAds/Mediation/GADMediationInterstitialAd.h>
 #import <GoogleMobileAds/Mediation/GADMediationNativeAd.h>
-#import <GoogleMobileAds/Mediation/GADMediationNativeAdAssetIdentifiers.h>
-#import <GoogleMobileAds/Mediation/GADMediationRequestError.h>
 #import <GoogleMobileAds/Mediation/GADMediationRewardedAd.h>
 #import <GoogleMobileAds/Mediation/GADMediationServerConfiguration.h>
 #import <GoogleMobileAds/Mediation/GADVersionNumber.h>
