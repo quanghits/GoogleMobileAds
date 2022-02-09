@@ -18,11 +18,11 @@ let package = Package(
     dependencies: [
         .package(name: "GoogleAppMeasurement",
                  url: "https://github.com/google/GoogleAppMeasurement.git",
-                 "7.0.0"..<"9.0.0"
+                 "7.0.0"..<"10.0.0"
         ),
         .package(name: "GoogleUserMessagingPlatform",
                  url: "https://github.com/quanghits/GoogleUserMessagingPlatform.git",
-                 "1.1.0"..."2.0.0")
+                 "1.1.0"..."3.0.0")
         
     ],
     targets: [
