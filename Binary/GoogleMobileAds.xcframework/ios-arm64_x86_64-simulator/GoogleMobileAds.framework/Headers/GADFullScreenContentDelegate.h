@@ -46,4 +46,9 @@
 /// Tells the delegate that the ad dismissed full screen content.
 - (void)adDidDismissFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad;
 
+#pragma mark - Unavailable
+
+/// Unsupported. Delegates should implement adWillPresentFullScreenContent: instead.
+- (void)adDidPresentFullScreenContent:(nonnull id<GADFullScreenPresentingAd>)ad NS_UNAVAILABLE;
+
 @end
