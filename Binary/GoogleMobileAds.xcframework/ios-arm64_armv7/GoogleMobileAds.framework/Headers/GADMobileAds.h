@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 #import <GoogleMobileAds/GADAudioVideoManager.h>
 #import <GoogleMobileAds/GADInitializationStatus.h>
@@ -87,5 +88,9 @@ typedef void (^GADAdInspectorCompletionHandler)(NSError *_Nullable error);
 - (void)presentAdInspectorFromViewController:(nonnull UIViewController *)viewController
                            completionHandler:
                                (nullable GADAdInspectorCompletionHandler)completionHandler;
+
+/// Registers a web view with the Google Mobile Ads SDK to improve in-app ad monetization of ads
+/// within this web view.
+- (void)registerWebView:(nonnull WKWebView *)webView;
 
 @end
